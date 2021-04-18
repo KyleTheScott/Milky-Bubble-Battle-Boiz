@@ -1,0 +1,21 @@
+1. Add the ripple particle prefab to a platform as a child. 
+2.Under the particle system Renderer tab, change the material between SquareRippleMat and CircleRippleMat for Cubes and Spheres
+3.Change the particles to a new layer called RippleLayer
+4. Add a camera in the center of the plane.
+5.Raise it up high.
+6.Rotate it facing down 90 on the X axis.
+7.Set the Background Type of the camera to color and set it to pure black.
+8.Set the Culling Mask of the camera to only the Ripple Layer.
+9.Create a new RenderTexture and assign it to the camera. The texture should be 1024 x 1024, MipMaps Enabled.
+10.Add the script Set Interactive Shader Effects to the camera.
+11.Add the RenderTexture to the RT slot.
+12.Add a GameObject transform to the target to have the camera follow around an object. Or simply put the Camera transform in the target slot.
+
+
+NOTE: You'll probably only want to have the ripples play when the character lands on the platform or else the entire tea is going to be covered with white foam.
+If so, set the Particle Prefab Loop checkbox to off
+
+//When player lands, play ripple burst once
+rippleParticle.Emit();
+
+Also, the Waves parameters of the shader should typically only be used on high poly planes.
