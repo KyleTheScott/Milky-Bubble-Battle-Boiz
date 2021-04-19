@@ -214,7 +214,7 @@ public class PlayerSelection : MonoBehaviour
     {
         if (!inputEnabled) { return; }
 
-        if(characterIndex == 0 || characterIndex == 1)
+        if(characterIndex != 3)
         {
             //selected character is the index i selected
             selectedCharacter = characterIndex;

@@ -9687,6 +9687,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1963500844101727489, guid: 3925385bfec63fa4ba0b03e89d755fce,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4863776903513367922, guid: 3925385bfec63fa4ba0b03e89d755fce,
         type: 3}
       propertyPath: ammoCount
@@ -9766,6 +9771,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.047
+      objectReference: {fileID: 0}
+    - target: {fileID: 8362161027717441666, guid: 3925385bfec63fa4ba0b03e89d755fce,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3925385bfec63fa4ba0b03e89d755fce, type: 3}
@@ -10337,7 +10347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxBullets: 50
-  bulletPrehab: {fileID: 1744393861206390357, guid: a94fecdb476d8824e8f121013957c0f3,
+  bulletPrehab: {fileID: 1744393861206390357, guid: 29b8c197d8f0ea44ab45d33084bd3b8e,
     type: 3}
   playerSpawns: []
   playerHUDs: []

@@ -2135,22 +2135,37 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 5188acb3edd91d54081918d25e298008,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5188acb3edd91d54081918d25e298008,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.13560034
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5188acb3edd91d54081918d25e298008,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.38294262
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5188acb3edd91d54081918d25e298008,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.31414324
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5188acb3edd91d54081918d25e298008,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.32001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5188acb3edd91d54081918d25e298008,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.09086
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5188acb3edd91d54081918d25e298008,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.156
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5188acb3edd91d54081918d25e298008,
         type: 3}
@@ -6440,7 +6455,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d3103aab505c7c5489042bce83d9631e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.1447182
+      value: -1.065
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d3103aab505c7c5489042bce83d9631e,
         type: 3}
@@ -6450,7 +6465,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d3103aab505c7c5489042bce83d9631e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.008882436
+      value: 0.0952
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d3103aab505c7c5489042bce83d9631e,
         type: 3}
@@ -14935,22 +14950,37 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 52145eff53a3fa3438d63894b6d09ee7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52145eff53a3fa3438d63894b6d09ee7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52145eff53a3fa3438d63894b6d09ee7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6945
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 52145eff53a3fa3438d63894b6d09ee7,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6945
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 52145eff53a3fa3438d63894b6d09ee7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.4570003
+      value: -0.694
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 52145eff53a3fa3438d63894b6d09ee7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.058
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 52145eff53a3fa3438d63894b6d09ee7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.18828228
+      value: 0.15952
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 52145eff53a3fa3438d63894b6d09ee7,
         type: 3}
@@ -19041,13 +19071,13 @@ MonoBehaviour:
   - ItemSprite: {fileID: 21300000, guid: b310dc25b86d23540858350780bf5b08, type: 3}
     ItemName: No Hat
     ItemObject: {fileID: 0}
-  - ItemSprite: {fileID: 21300000, guid: 07330d2fc86c1d54eb56661cffd58409, type: 3}
+  - ItemSprite: {fileID: 21300000, guid: 4c99c03700decc549b668cfa2b45f62c, type: 3}
     ItemName: Da Big Chug
     ItemObject: {fileID: 0}
-  - ItemSprite: {fileID: 21300000, guid: ee47ad4e6b791dc4a8c739593b22c6d5, type: 3}
+  - ItemSprite: {fileID: 21300000, guid: ecedd57df262ca147824895e8fac105f, type: 3}
     ItemName: Fedora
     ItemObject: {fileID: 0}
-  - ItemSprite: {fileID: 21300000, guid: 9ffdedc18f4f3584b91107fe37f35dff, type: 3}
+  - ItemSprite: {fileID: 21300000, guid: c4d26f305aaf4c84782be721dc7b4109, type: 3}
     ItemName: Beanie
     ItemObject: {fileID: 0}
   - ItemSprite: {fileID: 21300000, guid: 2eee04cd55c05444bba779f0859979b2, type: 3}
@@ -19073,7 +19103,7 @@ MonoBehaviour:
       type: 3}
   - ItemSprite: {fileID: 21300000, guid: b310dc25b86d23540858350780bf5b08, type: 3}
     ItemName: White Sugar
-    ItemObject: {fileID: 1477311150857223063, guid: f3237425e29ca684b81b3a063b5c1a7d,
+    ItemObject: {fileID: 2832185875878148869, guid: 7b8b4438a8143a64a94374ecd124c827,
       type: 3}
   - ItemSprite: {fileID: 21300000, guid: 5d330d0ce71628943b71411f5c6af38e, type: 3}
     ItemName: Honey
