@@ -85,28 +85,25 @@ public class Dialogue : MonoBehaviour
         if (tutorialPanel.activeSelf)
         {
 
-           
-
             gamepad = Gamepad.current;
 
             switch (gamepad)
             {
                 //handle keyboard + mouse
                 case null:
-                    if ((Input.GetKeyDown(KeyCode.Return) && isKeyboard))
+                    if ((Input.GetKeyDown(KeyCode.Return)))
                     {
                         HandleNextForJumping();
                     }
 
-                    if ((Input.GetKeyDown(KeyCode.Escape) && isKeyboard))
+                    if ((Input.GetKeyDown(KeyCode.Escape)))
                     {
                         HandleEscForJumping();
                     }
-                    if ((Input.GetKeyDown(KeyCode.S) && isKeyboard))
+                    if ((Input.GetKeyDown(KeyCode.S)))
                     {
                         HandleSkipForJumping();
                     }
-
                         break;
                 default:
                     if (Gamepad.current.buttonSouth.wasReleasedThisFrame)
