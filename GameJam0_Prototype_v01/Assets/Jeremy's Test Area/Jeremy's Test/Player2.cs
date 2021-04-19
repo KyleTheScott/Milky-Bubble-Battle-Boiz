@@ -617,17 +617,7 @@ public class Player2 : MonoBehaviour
 
     void UpdateAmmoHUD()
     {
-        /*  playerHUD.ammoText.text = ammoCount + " / " + ammoLimit;
-
-          if (ammoQueue.Count > 0)
-          {
-              Debug.Log("Set bullet image");
-              playerHUD.NextBullet.sprite = ammoQueue.Peek().GetComponent<BulletController>().BulletImage;
-          }
-          else
-          {
-              playerHUD.NextBullet.sprite = null;
-          }*/
+        ammoCountText.text = "" + ammoCount;
     }
 
     void UpdatePlayerImage()

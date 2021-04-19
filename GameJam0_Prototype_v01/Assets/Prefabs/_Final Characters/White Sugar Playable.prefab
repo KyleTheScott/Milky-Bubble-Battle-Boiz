@@ -105,7 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: 74ec376f97494e949900c48f70f11702,
     type: 3}
-  m_NotificationBehavior: 3
+  m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammoCount: 0
-  ammoLimit: 6
+  ammoLimit: 0
   platformLayer:
     serializedVersion: 2
     m_Bits: 2048
@@ -248,22 +248,30 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 16384
+  jumpThreshold: 0.1
+  landingCheckDelay: 0.1
   playerHUD: {fileID: 0}
   isGrounded: 1
   movementSpeed: 2
   jumpForce: 75
   isStunned: 0
   maxVelocity: 4
-  jumpThreshold: 0.1
-  landingCheckDelay: 0.1
   isAbsorbing: 0
-  playerAbsorbRadius: 1
+  playerAbsorbRadius: 0.6
   playerRigidbody: {fileID: 0}
   jumpMarker: {fileID: 6622509799101929408}
   projectile: {fileID: 1744393861206390357, guid: 29b8c197d8f0ea44ab45d33084bd3b8e,
     type: 3}
+  absorbingTime: 3
+  playerID: 0
   anim: {fileID: 5749010231162078156}
   StrawAnim: {fileID: 0}
+  testVel: 0
+  ammoCountText: {fileID: 0}
+  playerAudio: {fileID: 0}
+  bulletHit: {fileID: 0}
+  absorbSound: {fileID: 0}
+  strawSuckSound: {fileID: 0}
 --- !u!1 &3153040773824795112
 GameObject:
   m_ObjectHideFlags: 0

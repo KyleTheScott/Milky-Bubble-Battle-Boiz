@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class Dialogue : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Dialogue : MonoBehaviour
 
     public GameObject tutorialPanel;
     public GameObject gamePanel;
+    public GameObject[] instructionsPanel;
 
     public GameObject uiPanel;
     public GameObject ui2Panel;
@@ -26,8 +28,20 @@ public class Dialogue : MonoBehaviour
     bool absorbTwice = false;
     bool absorbThrice = false;
 
+    bool isKeyboard;
+    bool isGamepad;
+
+    Gamepad gamepad;
+
+
+    float ignoreInputTime = 1.5f;
+    bool inputEnabled;
+
+    public PlayerInput playerInput;
+
     private void Start()
     {
+
         textDisplay.SetText(sentences[index]);
 
         Scene currentScene = SceneManager.GetActiveScene();
@@ -63,66 +77,60 @@ public class Dialogue : MonoBehaviour
 
     }
 
+
+
+
     void JumpTutorial()
     {
-        if(tutorialPanel.activeSelf)
+        if (tutorialPanel.activeSelf)
         {
-            if (Input.GetKeyDown(KeyCode.Return))
+
+           
+
+            gamepad = Gamepad.current;
+
+            switch (gamepad)
             {
-                Debug.Log("this is index: " + index);
-                if (index == 3)
-                {
-                    tutorialPanel.SetActive(false);
-                    Time.timeScale = 1;
-                }
-                if (index == 4)
-                {
-                    SceneManager.LoadScene("TutorialShooting");
-                }
-                if (index == 5)
-                {
-                    Respawn.death = false;
-                    SceneManager.LoadScene("TutorialJumping");
-                }
-                else
-                {
-                    nextSentence();
-                }
+                //handle keyboard + mouse
+                case null:
+                    if ((Input.GetKeyDown(KeyCode.Return) && isKeyboard))
+                    {
+                        HandleNextForJumping();
+                    }
+
+                    if ((Input.GetKeyDown(KeyCode.Escape) && isKeyboard))
+                    {
+                        HandleEscForJumping();
+                    }
+                    if ((Input.GetKeyDown(KeyCode.S) && isKeyboard))
+                    {
+                        HandleSkipForJumping();
+                    }
+
+                        break;
+                default:
+                    if (Gamepad.current.buttonSouth.wasReleasedThisFrame)
+                    {
+                        HandleNextForJumping();
+                    }
+
+                    if (Gamepad.current.buttonEast.wasReleasedThisFrame)
+                    {
+                        HandleEscForJumping();
+                    }
+
+                    if (Gamepad.current.buttonWest.wasReleasedThisFrame)
+                    {
+                        HandleSkipForJumping();
+                    }
+
+                    break;
             }
 
+           
 
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                Debug.Log("this is index: " + index);
-                if (index > 0 && index != 4 && index != 5)
-                {
-                    lastSentence();
-                }
 
-            }
-            if (Input.GetKeyDown(KeyCode.S))
-            {
-                if(index <= 3)
-                {
-                    Time.timeScale = 1;
-                }
-                if (index == 4)
-                {
-                    SceneManager.LoadScene("TutorialShooting");
-                }
-                if (index == 5)
-                {
-                    Respawn.death = false;
-                    SceneManager.LoadScene("TutorialJumping");
-                }
-                else
-                {
-                    Debug.Log("this is index: " + index);
-                    tutorialPanel.SetActive(false);
-                    index = 6;
-                    displayText();
-                }
-            }
+
         }
         
 
@@ -139,6 +147,8 @@ public class Dialogue : MonoBehaviour
         //death check
         if (Respawn.death)
         {
+            instructionsPanel[0].SetActive(false);
+            instructionsPanel[1].SetActive(false);
             tutorialPanel.SetActive(true);
             index = 5;
             displayText();
@@ -151,48 +161,39 @@ public class Dialogue : MonoBehaviour
     {
         if (tutorialPanel.activeSelf)
         {
-            if (Input.GetKeyDown(KeyCode.Return))
+
+            gamepad = Gamepad.current;
+
+            switch (gamepad)
             {
-                Debug.Log("this is index: " + index);
+                case null:
 
-                //index
-                if (index == 0)
-                {
-                    tutorialPanel.SetActive(false);
+                    if (Input.GetKeyDown(KeyCode.Return)){
+                        HandleNextForShooting();
+                    }
 
-                    Time.timeScale = 1;
-                }
-                if (index == 1)
-                {
-                    tutorialPanel.SetActive(false);
+                    if (Input.GetKeyDown(KeyCode.S))
+                    {
+                        HandleSkipForShooting();
+                    }
 
-                    Time.timeScale = 1;
-                }
-                if (index == 2)
-                {
-                    tutorialPanel.SetActive(false);
-                    switchPanels(uiPanel, ui2Panel);
+                    break;
 
-                    CounterSystem.checkpointCount = 0; //reset absorb count for target count
+                default:
+                    if (Gamepad.current.buttonSouth.wasReleasedThisFrame)
+                    {
+                        HandleNextForShooting();
+                    }
 
-                    player.setAttackingEnabled(true);
-
-                    Time.timeScale = 1;
-                }
-                if (index == 3)
-                {
-                    SceneManager.LoadScene("StartMenu");
-                }
-                if (index == 4)
-                {
-                    Respawn.death = false;
-                    SceneManager.LoadScene("TutorialShooting");
-                }
-                else
-                {
-                    nextSentence();
-                }
+                    if (Gamepad.current.buttonWest.wasReleasedThisFrame)
+                    {
+                        HandleSkipForShooting();
+                    }
+                    break;
             }
+
+
+          
 
             /*
             if (Input.GetKeyDown(KeyCode.Escape))
@@ -201,39 +202,8 @@ public class Dialogue : MonoBehaviour
             }
             */
 
-            if (Input.GetKeyDown(KeyCode.S))
-            {
-                if (player.getAmmoCount() == 0 || player.getAmmoCount() == 2 || player.getAmmoCount() == 6)
-                {
-                    Time.timeScale = 1;
-                }
-                if (CounterSystem.checkpointCount == 0 && player.getAmmoCount() > 0)
-                {
-                    player.setAttackingEnabled(true);
-
-                    Time.timeScale = 1;
-                }
-                if (index == 2)
-                {
-                    tutorialPanel.SetActive(false);
-                    switchPanels(uiPanel, ui2Panel);
-                    player.setAttackingEnabled(true);
-                    CounterSystem.checkpointCount = 0; //reset absorb count for target count
-
-                    Time.timeScale = 1;
-                }
-                if (index == 4)
-                {
-                    Respawn.death = false;
-                    SceneManager.LoadScene("TutorialShooting");
-                }
-                tutorialPanel.SetActive(false);
-                index = 5;
-                displayText();
-
-                Time.timeScale = 1;
-
-            }
+            
+                
 
         }
 
@@ -340,4 +310,147 @@ public class Dialogue : MonoBehaviour
         panel1.SetActive(false);
         panel2.SetActive(true);
     }
-}
+
+    void HandleNextForJumping()
+    {
+        Debug.Log("this is index: " + index);
+        if (index == 3)
+        {
+            tutorialPanel.SetActive(false);
+            instructionsPanel[0].SetActive(true);
+            instructionsPanel[1].SetActive(true);
+            Time.timeScale = 1;
+        }
+        if (index == 4)
+        {
+            SceneManager.LoadScene("TutorialShooting");
+        }
+        if (index == 5)
+        {
+            Respawn.death = false;
+            SceneManager.LoadScene("TutorialJumping");
+        }
+        else
+        {
+            nextSentence();
+        }
+    }
+
+    void HandleEscForJumping()
+    {
+        Debug.Log("this is index: " + index);
+        if (index > 0 && index != 4 && index != 5)
+        {
+            lastSentence();
+        }
+    }
+
+    void HandleSkipForJumping()
+    {
+        if (index <= 3)
+        {
+            Time.timeScale = 1;
+            instructionsPanel[0].SetActive(true);
+            instructionsPanel[1].SetActive(true);
+        }
+        if (index == 4)
+        {
+            SceneManager.LoadScene("TutorialShooting");
+        }
+        if (index == 5)
+        {
+            Respawn.death = false;
+            SceneManager.LoadScene("TutorialJumping");
+        }
+        else
+        {
+            Debug.Log("this is index: " + index);
+            tutorialPanel.SetActive(false);
+            index = 6;
+            displayText();
+        }
+    }
+
+    void HandleNextForShooting()
+    {
+        Debug.Log("this is index: " + index);
+
+        //index
+        if (index == 0)
+        {
+            tutorialPanel.SetActive(false);
+            instructionsPanel[0].SetActive(true);
+            instructionsPanel[1].SetActive(true);
+            instructionsPanel[2].SetActive(false);
+            Time.timeScale = 1;
+        }
+        if (index == 1)
+        {
+            tutorialPanel.SetActive(false);
+
+            Time.timeScale = 1;
+        }
+        if (index == 2)
+        {
+            tutorialPanel.SetActive(false);
+            switchPanels(uiPanel, ui2Panel);
+
+            CounterSystem.checkpointCount = 0; //reset absorb count for target count
+
+            player.setAttackingEnabled(true);
+
+            Time.timeScale = 1;
+        }
+        if (index == 3)
+        {
+            SceneManager.LoadScene("StartMenu");
+        }
+        if (index == 4)
+        {
+            Respawn.death = false;
+            SceneManager.LoadScene("TutorialShooting");
+        }
+        else
+        {
+            nextSentence();
+        }
+    }
+
+        void HandleSkipForShooting()
+        {
+            if (player.getAmmoCount() == 0 || player.getAmmoCount() == 2 || player.getAmmoCount() == 6)
+            {
+                Time.timeScale = 1;
+                instructionsPanel[0].SetActive(true);
+                instructionsPanel[1].SetActive(true);
+                instructionsPanel[2].SetActive(false);
+        }
+            if (CounterSystem.checkpointCount == 0 && player.getAmmoCount() > 0)
+            {
+                player.setAttackingEnabled(true);
+
+                Time.timeScale = 1;
+            }
+            if (index == 2)
+            {
+                tutorialPanel.SetActive(false);
+                switchPanels(uiPanel, ui2Panel);
+                player.setAttackingEnabled(true);
+                CounterSystem.checkpointCount = 0; //reset absorb count for target count
+
+                Time.timeScale = 1;
+            }
+            if (index == 4)
+            {
+                Respawn.death = false;
+                SceneManager.LoadScene("TutorialShooting");
+            }
+            tutorialPanel.SetActive(false);
+            index = 5;
+            displayText();
+
+            Time.timeScale = 1;
+
+        }
+    }
+
