@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{c8d73aa1-2460-43ca-b2a3-19c445052c3f}">
 		<property name="name">
-			<value>Barrista_Shoot_01</value>
+			<value>Barrista_Tutorial_Shoot_Transition_In_The_Top</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>

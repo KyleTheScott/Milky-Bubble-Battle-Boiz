@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{43e864c9-af0c-4789-a0c9-596c4f003373}">
 		<property name="name">
-			<value>Barrista_Menu_Quotes</value>
+			<value>Barrista_Main_Menu_Idle_Chat</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>
