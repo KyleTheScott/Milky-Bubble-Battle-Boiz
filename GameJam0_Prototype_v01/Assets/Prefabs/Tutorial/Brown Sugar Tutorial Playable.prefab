@@ -2223,25 +2223,6 @@ Transform:
   m_Father: {fileID: 1019537887101250301}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -9.327759, y: -5.500093, z: 1.2518647}
---- !u!95 &4863776904254223504
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5746296817620895636}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c03246fbba6d4a745a4e1a2703a2c2fb, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4918526855862203207
 GameObject:
   m_ObjectHideFlags: 0
@@ -2577,6 +2558,25 @@ Transform:
   m_Father: {fileID: 3046263509320556084}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &4863776904254223504
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5746296817620895636}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c03246fbba6d4a745a4e1a2703a2c2fb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5880334530038874231
 GameObject:
   m_ObjectHideFlags: 0
@@ -3006,6 +3006,18 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: c6a544ba-72fd-4fd1-800f-8d6184ba9e83
     m_ActionName: Gameplay/Absorb[/DualShock4GamepadHID/leftTrigger]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1a95ffd0-245b-4543-a615-6feb94658828
+    m_ActionName: Tutorial/Skip[/Keyboard/s]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 0ebad175-c895-49f0-b43d-2b685d71a8b3
+    m_ActionName: Tutorial/Next[/Keyboard/enter]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8ab423d6-6f08-4bcc-8bfc-9aa3f3222763
+    m_ActionName: Tutorial/Back[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Keyboard & Mouse
   m_DefaultActionMap: Gameplay
@@ -3041,6 +3053,7 @@ MonoBehaviour:
   jumpForce: 75
   isStunned: 0
   isAbsorbing: 0
+  playerAbsorbRadius: 1
   playerRigidbody: {fileID: 5529323105372430508}
   jumpMarker: {fileID: 6341048454668028331}
   straw: {fileID: 5746296817620895636}
@@ -3052,6 +3065,9 @@ MonoBehaviour:
   StrawAnim: {fileID: 4863776904254223504}
   testVel: 0
   ammoCountText: {fileID: 0}
+  movementEnabled: 0
+  attackingEnabled: 0
+  absorbingEnabled: 0
 --- !u!1 &6424329322136109605
 GameObject:
   m_ObjectHideFlags: 0

@@ -82,11 +82,12 @@ public class Player1 : MonoBehaviour
     private float inputV;
 
     //Everything Sound Related
-    [Header("Player Sound")]
+    /*[Header("Player Sound")] Old Sound variables
     [SerializeField]
     private AudioSource playerAudio;
     [SerializeField]
     private AudioClip bulletHit, absorbSound, strawSuckSound;
+    */
 
     // Unused variables
     //public static int playerIndex = 0;
@@ -399,10 +400,6 @@ public class Player1 : MonoBehaviour
                 {
                     anim.SetBool("isAbsorbing", true);
 
-                    playerAudio.clip = strawSuckSound;
-                    playerAudio.loop = true;
-                    playerAudio.Play();
-
                     Debug.Log("Platform targeted");
 
                     //var renderer = targetPlatform.gameObject.GetComponent<Renderer>();
@@ -422,10 +419,7 @@ public class Player1 : MonoBehaviour
 
         if (!absorbInput)
         {
-            anim.SetBool("isAbsorbing", false);
-            playerAudio.Stop();
-            playerAudio.loop = false;
-            
+            anim.SetBool("isAbsorbing", false);            
         }
 
         if (!absorbInput && isAbsorbing)
@@ -658,6 +652,8 @@ public class Player1 : MonoBehaviour
         return playerConfiguration;
     }
 
+    //old sound functions.  update with fmod
+    /*
     public void PlayHitSound()
     {
         playerAudio.clip = bulletHit;
@@ -669,7 +665,7 @@ public class Player1 : MonoBehaviour
         playerAudio.clip = absorbSound;
         playerAudio.Play();
     }
-
+    */
 
 }
 

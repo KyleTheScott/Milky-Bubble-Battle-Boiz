@@ -214,7 +214,7 @@ public class PlayerSelection : MonoBehaviour
     {
         if (!inputEnabled) { return; }
 
-        if(characterIndex == 0 || characterIndex == 1)
+        if(characterIndex !=3)
         {
             //selected character is the index i selected
             selectedCharacter = characterIndex;
@@ -242,7 +242,7 @@ public class PlayerSelection : MonoBehaviour
         else
         {
             
-            Debug.LogWarning("Hard coded for XP Summit to only choose Brown Bear!  Edit Player selection to delete if statement in SetPlayerCharacter Function to fix " +
+            Debug.LogWarning("Hard coded to only not select honey!  Edit Player selection to delete if statement in SetPlayerCharacter Function to fix " +
                 "this!  This is not a bug!");
         }
         
