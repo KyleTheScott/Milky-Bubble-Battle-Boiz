@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{7c938227-88a2-4308-8259-74d2c028077b}">
+		<property name="assetPath">
+			<value>Idle Chat 8.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>2.6960000000000002</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a6d5e58a-1e5f-4a4f-a271-f5fd91df3ec6}</destination>
+		</relationship>
+	</object>
+</objects>

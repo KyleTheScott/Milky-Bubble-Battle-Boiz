@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{e2b65fdb-c645-4a0b-96b4-72cf5f3f794a}">
+		<property name="assetPath">
+			<value>In the top right corner is your flavour’s ammo count. Right now you don’t have any. Let’s start by absorbing a platform! nomix
+no
+no.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>8.4906666666666659</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a6d5e58a-1e5f-4a4f-a271-f5fd91df3ec6}</destination>
+		</relationship>
+	</object>
+</objects>

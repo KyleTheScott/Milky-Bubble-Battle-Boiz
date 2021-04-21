@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{f58fa1ff-5d2c-4660-aa85-03e1e8bc55c3}">
+		<property name="assetPath">
+			<value>Awesome! Absorbing a platform grants you with ammo. Be careful though, absorbing a platform removes a spot you can stand on!nom.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>8.4956666666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a6d5e58a-1e5f-4a4f-a271-f5fd91df3ec6}</destination>
+		</relationship>
+	</object>
+</objects>

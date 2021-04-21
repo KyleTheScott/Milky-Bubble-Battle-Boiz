@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{ddb61829-f39d-4a41-9657-f1920ca69d6f}">
+		<property name="assetPath">
+			<value> It is surprisingly tasty so try not to fall into the drink, otherwise you become a delicious delight!
+_nomix.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>7.4240000000000004</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a6d5e58a-1e5f-4a4f-a271-f5fd91df3ec6}</destination>
+		</relationship>
+	</object>
+</objects>
