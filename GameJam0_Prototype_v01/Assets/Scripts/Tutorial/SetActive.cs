@@ -9,21 +9,29 @@ public class SetActive : MonoBehaviour
 
     private void Update()
     {
-        if(activate == true)
+        if(myObject != null)
         {
-            myObject.SetActive(true);
+            if (activate == true)
+            {
+                myObject.SetActive(true);
+            }
+            else
+            {
+                myObject.SetActive(false);
+            }
         }
-        else
-        {
-            myObject.SetActive(false);
-        }
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            myObject.SetActive(true);
+            if(myObject != null)
+            {
+                myObject.SetActive(true);
+            }
+           
         }
 
     }

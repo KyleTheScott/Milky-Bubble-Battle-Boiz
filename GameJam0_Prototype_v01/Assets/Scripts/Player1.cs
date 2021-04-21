@@ -81,8 +81,8 @@ public class Player1 : MonoBehaviour
     private float inputH;
     private float inputV;
 
-    /*Everything Sound Related
-    [Header("Player Sound")]
+    //Everything Sound Related
+    /*[Header("Player Sound")] Old Sound variables
     [SerializeField]
     private AudioSource playerAudio;
     [SerializeField]
@@ -419,8 +419,7 @@ public class Player1 : MonoBehaviour
 
         if (!absorbInput)
         {
-            anim.SetBool("isAbsorbing", false);
-            
+            anim.SetBool("isAbsorbing", false);            
         }
 
         if (!absorbInput && isAbsorbing)
@@ -653,7 +652,7 @@ public class Player1 : MonoBehaviour
         return playerConfiguration;
     }
 
-    //sound functions
+    //old sound functions.  update with fmod
     /*
     public void PlayHitSound()
     {

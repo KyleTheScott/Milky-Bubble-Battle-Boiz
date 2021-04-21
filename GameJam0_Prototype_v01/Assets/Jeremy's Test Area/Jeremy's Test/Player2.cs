@@ -55,6 +55,8 @@ public class Player2 : MonoBehaviour
 
     [SerializeField]
     private bool isAbsorbing;
+    [SerializeField]
+    private float playerAbsorbRadius = 0.6f;
 
     private PlatformController targetPlatform = null;
 
@@ -356,7 +358,7 @@ public class Player2 : MonoBehaviour
             {
                 Debug.Log("Trying to find a platform");
                 // Perform a sphere cast in front of the player
-                var colliderHits = Physics.OverlapSphere(transform.position + transform.forward * 1.5f, 0.6f, platformLayer);
+                var colliderHits = Physics.OverlapSphere(transform.position + transform.forward * 1.5f, playerAbsorbRadius, platformLayer);
 
                 //Debug.Draw
                 // Check if there was a hit
@@ -617,17 +619,7 @@ public class Player2 : MonoBehaviour
 
     void UpdateAmmoHUD()
     {
-        /*  playerHUD.ammoText.text = ammoCount + " / " + ammoLimit;
-
-          if (ammoQueue.Count > 0)
-          {
-              Debug.Log("Set bullet image");
-              playerHUD.NextBullet.sprite = ammoQueue.Peek().GetComponent<BulletController>().BulletImage;
-          }
-          else
-          {
-              playerHUD.NextBullet.sprite = null;
-          }*/
+        ammoCountText.text = "" + ammoCount;
     }
 
     void UpdatePlayerImage()

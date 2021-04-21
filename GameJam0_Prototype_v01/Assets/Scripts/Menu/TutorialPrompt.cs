@@ -47,7 +47,7 @@ public class TutorialPrompt : MonoBehaviour
             {
                 keyDown = true;
                 StartCoroutine("IncreaseIndex");
-                
+                Debug.Log("key pressed");
             }
 
             else if (Input.GetAxis("Horizontal") < -0.5)
