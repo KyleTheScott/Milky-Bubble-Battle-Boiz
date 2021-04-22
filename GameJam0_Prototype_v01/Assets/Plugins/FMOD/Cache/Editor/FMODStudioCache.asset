@@ -68,6 +68,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 741
+--- !u!114 &-8430870754782442712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tutorial/Barrista_Tutorial_Prompt_01
+  m_EditorClassIdentifier: 
+  Path: event:/Tutorial/Barrista_Tutorial_Prompt_01
+  guid: f36d380da767b34ab07021f38844086d
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-8427630356723985765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,6 +115,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
+--- !u!114 &-8351642077467540691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tutorial/Barrista_Tutorial_Shoot_Transition_Awesome
+  m_EditorClassIdentifier: 
+  Path: event:/Tutorial/Barrista_Tutorial_Shoot_Transition_Awesome
+  guid: 295b0693f35d514083bd948d81ffb17c
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-8081396844274125955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,6 +159,52 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1288
   Exists: 1
+--- !u!114 &-7461386178624456815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tutorial/Barrista_Tutorial_Shoot_Transition_Great
+  m_EditorClassIdentifier: 
+  Path: event:/Tutorial/Barrista_Tutorial_Shoot_Transition_Great
+  guid: a272f46f8f2473439954934381cc7dda
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-7454988217465013057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Arena/Heavy_Platform_Sink
+  m_EditorClassIdentifier: 
+  Path: event:/Arena/Heavy_Platform_Sink
+  guid: 93585d35e64efb4d91fb23da20a770b5
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1750
 --- !u!114 &-7244095683143760869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,6 +228,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1000
+--- !u!114 &-7040335128586459418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tutorial/Barrista_Tutorial_Menu_Transition_This_Here
+  m_EditorClassIdentifier: 
+  Path: event:/Tutorial/Barrista_Tutorial_Menu_Transition_This_Here
+  guid: d3a378da2bc4474491c8f616df80650d
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-6888883353196825932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,6 +273,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 4159
+--- !u!114 &-6824339769974159289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Arena/Barrista_We_Have_A_Winner
+  m_EditorClassIdentifier: 
+  Path: event:/Arena/Barrista_We_Have_A_Winner
+  guid: ea9554e36af6fe4ab8e010e42c63f732
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-6602308778923697216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,6 +319,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1750
+--- !u!114 &-6392302258383154584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tutorial/Barrista_Tutorial_Menu_Transition_Standing
+  m_EditorClassIdentifier: 
+  Path: event:/Tutorial/Barrista_Tutorial_Menu_Transition_Standing
+  guid: 57569713653b944ca8763a1c145083bb
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-5768132403414677410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,6 +365,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 726
+--- !u!114 &-5743768032339519456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Arena/Grass_Jelly_Bounce
+  m_EditorClassIdentifier: 
+  Path: event:/Arena/Grass_Jelly_Bounce
+  guid: 14642d9e366e964c8f48dff0aef5bce9
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-5545557943207806617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,6 +457,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-5356735733535615236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Platform_Absorb_Pop
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Platform_Absorb_Pop
+  guid: e63df16431d312498fa85405a7e525f6
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2250
 --- !u!114 &-5161023930887952225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,6 +672,52 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 936
+--- !u!114 &-2809521191685223573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tutorial/Barrista_Tutorial_Shoot_Transition_Amazing
+  m_EditorClassIdentifier: 
+  Path: event:/Tutorial/Barrista_Tutorial_Shoot_Transition_Amazing
+  guid: 6329a24d48f0c441a87c575ab1fc8325
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-2470984824876462889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tutorial/Barrista_Tutorial_Fall_Transition
+  m_EditorClassIdentifier: 
+  Path: event:/Tutorial/Barrista_Tutorial_Fall_Transition
+  guid: e51c41cc108c90499383c41567a1bde2
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-2180977908159194325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,6 +740,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 741
+--- !u!114 &-1677103539577859345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Menu/Barrista_Main_Menu_Idle_Chat
+  m_EditorClassIdentifier: 
+  Path: event:/Menu/Barrista_Main_Menu_Idle_Chat
+  guid: c964e8430caf8947a0c9596c4f003373
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
 --- !u!114 &-1399471762066026294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -591,6 +867,75 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 936
+--- !u!114 &-1222813743593729018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Arena/Platform_Sink_Indicator
+  m_EditorClassIdentifier: 
+  Path: event:/Arena/Platform_Sink_Indicator
+  guid: 1f9ff2ba8f401c40a0f8913d1a9a0f3d
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 741
+--- !u!114 &-1214245114633351500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tutorial/Barrista_Tutorial_Menu_Transition_It_Is_Surprisingly
+  m_EditorClassIdentifier: 
+  Path: event:/Tutorial/Barrista_Tutorial_Menu_Transition_It_Is_Surprisingly
+  guid: fb6d764cd944834ba3e8a3b39fa00320
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-1160872952571842666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tutorial/Barrista_Tutorial_Menu_Transition_You_Did_It
+  m_EditorClassIdentifier: 
+  Path: event:/Tutorial/Barrista_Tutorial_Menu_Transition_You_Did_It
+  guid: 711b2c94daaef54c9cc3e25ac87ca8e6
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-1087508811488717540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -636,6 +981,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1750
+--- !u!114 &-716701418803749042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/Menu_Music
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/Menu_Music
+  guid: 60f13f45134ba04b8e9105b26ee0131e
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-657681729343851436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -828,30 +1196,49 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -487989756220019493}
-  - {fileID: -5092647583715797683}
+  - {fileID: 1728509934410020916}
+  - {fileID: 309073573101954656}
   EditorEvents:
-  - {fileID: -3227766729426435159}
-  - {fileID: -8836134786798922844}
-  - {fileID: -5455882695986447478}
-  - {fileID: 3441338547255416263}
-  - {fileID: 5312547785122935629}
-  - {fileID: -809776440167550577}
-  - {fileID: 3977182388149221699}
-  - {fileID: 303133902273750193}
-  - {fileID: 4819514764001618468}
-  - {fileID: -657681729343851436}
-  - {fileID: 6560809994432917}
-  - {fileID: 8433238191913491952}
-  - {fileID: 7922926118844826545}
-  - {fileID: -213919375491787132}
-  - {fileID: 6173338141195724209}
+  - {fileID: 5728732690935997826}
+  - {fileID: 1697465664719237505}
+  - {fileID: 9202007672866004583}
+  - {fileID: -5743768032339519456}
+  - {fileID: 2967107649511177543}
+  - {fileID: -1222813743593729018}
+  - {fileID: -8351642077467540691}
+  - {fileID: 4782382355422162144}
+  - {fileID: 3592655799336831069}
+  - {fileID: 6372941105257281580}
+  - {fileID: -6392302258383154584}
+  - {fileID: -716701418803749042}
+  - {fileID: -2809521191685223573}
+  - {fileID: 257428275618273033}
+  - {fileID: 1386627694279495040}
+  - {fileID: -1160872952571842666}
+  - {fileID: 4142831485106970374}
+  - {fileID: 6017857460982622242}
+  - {fileID: -7454988217465013057}
+  - {fileID: 5979750768364945812}
+  - {fileID: 5277685702883765671}
+  - {fileID: 5566204049240414099}
+  - {fileID: -7461386178624456815}
+  - {fileID: -1677103539577859345}
+  - {fileID: 1484175239072015566}
+  - {fileID: -7040335128586459418}
+  - {fileID: -2470984824876462889}
+  - {fileID: -5356735733535615236}
+  - {fileID: 2692225058716654116}
+  - {fileID: 8600411164579622022}
+  - {fileID: -6824339769974159289}
+  - {fileID: -8430870754782442712}
+  - {fileID: -1214245114633351500}
+  - {fileID: 3190725069976835295}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -5092647583715797683}
+  - {fileID: 309073573101954656}
   StringsBanks:
-  - {fileID: -487989756220019493}
-  stringsBankWriteTime: 637544701270000000
+  - {fileID: 1728509934410020916}
+  stringsBankWriteTime: 637545506038244334
   cacheVersion: 6
 --- !u!114 &6560809994432917
 MonoBehaviour:
@@ -876,6 +1263,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 800
+--- !u!114 &257428275618273033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Arena/Wall_Hit
+  m_EditorClassIdentifier: 
+  Path: event:/Arena/Wall_Hit
+  guid: 671b7c7f72da98439525aab65fd93dd1
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 612
 --- !u!114 &303133902273750193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -899,6 +1309,25 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
+--- !u!114 &309073573101954656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../GitHub/Milky-Bubble-Battle-Boiz/GameJam0_Prototype_v01/Bubble_Boiz_FMOD_2021/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637545506038104631
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &735739141785187465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -921,6 +1350,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1750
+--- !u!114 &1386627694279495040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Arena/Ice_Block
+  m_EditorClassIdentifier: 
+  Path: event:/Arena/Ice_Block
+  guid: 6cb12b587026eb4995cbbbf6e4b9f9d8
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1159
 --- !u!114 &1446644885103362805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -944,6 +1396,73 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 612
+--- !u!114 &1484175239072015566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tutorial/Barrista_Tutorial_Shoot_Transition_Let's_Try
+  m_EditorClassIdentifier: 
+  Path: event:/Tutorial/Barrista_Tutorial_Shoot_Transition_Let's_Try
+  guid: d181f12ca57dbc478c59d88db86c17b0
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &1697465664719237505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tutorial/Barristal_Tutorial_Menu_Transition_This_Is_Brown
+  m_EditorClassIdentifier: 
+  Path: event:/Tutorial/Barristal_Tutorial_Menu_Transition_This_Is_Brown
+  guid: 0bad21a0fa2fe848a7649b856a85b159
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &1728509934410020916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../GitHub/Milky-Bubble-Battle-Boiz/GameJam0_Prototype_v01/Bubble_Boiz_FMOD_2021/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637545506038244334
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2512
+  Exists: 1
 --- !u!114 &2056635177432926726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1055,6 +1574,75 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1159
+--- !u!114 &2692225058716654116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Arena/Bullet_Contact
+  m_EditorClassIdentifier: 
+  Path: event:/Arena/Bullet_Contact
+  guid: e97a4e41a0255f4fbe544f5ef717d25e
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 726
+--- !u!114 &2967107649511177543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Arena/Bell
+  m_EditorClassIdentifier: 
+  Path: event:/Arena/Bell
+  guid: 15759af24831bd49bb0c45d1f585f998
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 936
+--- !u!114 &3190725069976835295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tutorial/Barrista_Tutorial_Shoot_Transition_Oops
+  m_EditorClassIdentifier: 
+  Path: event:/Tutorial/Barrista_Tutorial_Shoot_Transition_Oops
+  guid: fc5c5d5543e986418c227385f9a21ffa
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &3441338547255416263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1078,6 +1666,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 612
+--- !u!114 &3592655799336831069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Arena/Barrista_Countdown
+  m_EditorClassIdentifier: 
+  Path: event:/Arena/Barrista_Countdown
+  guid: 35a8139d804be34d84b70c885f3e1da1
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &3599981343411959362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1124,6 +1735,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &4142831485106970374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Arena/Regular_Tapioca
+  m_EditorClassIdentifier: 
+  Path: event:/Arena/Regular_Tapioca
+  guid: 883979f006c7954bb099e9ba2214dbad
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &4288154872975044050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1146,6 +1780,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 800
+--- !u!114 &4782382355422162144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tutorial/Barrista_Tutorial_Shoot_Transition_You're_Low
+  m_EditorClassIdentifier: 
+  Path: event:/Tutorial/Barrista_Tutorial_Shoot_Transition_You're_Low
+  guid: 2ad622e83a0d574ba1af9be990f91372
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &4819514764001618468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1192,6 +1849,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 4159
+--- !u!114 &5277685702883765671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tutorial/Barrista_Tutorial_Prompt_02
+  m_EditorClassIdentifier: 
+  Path: event:/Tutorial/Barrista_Tutorial_Prompt_02
+  guid: 99a29536432eea45bc30db54ddab84a5
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &5312547785122935629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1215,6 +1895,52 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1159
+--- !u!114 &5566204049240414099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Tutorial/Barrista_Tutorial_Shoot_Transition_In_The_Top
+  m_EditorClassIdentifier: 
+  Path: event:/Tutorial/Barrista_Tutorial_Shoot_Transition_In_The_Top
+  guid: a13ad7c86024ca43b2a319c445052c3f
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &5728732690935997826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Sraw_Shoot
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Sraw_Shoot
+  guid: 06971604475e8849bf5d7fab4708c2de
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 800
 --- !u!114 &5786710062536825442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1238,6 +1964,53 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 741
+--- !u!114 &5979750768364945812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Menu/Menu_Option_Sound
+  m_EditorClassIdentifier: 
+  Path: event:/Menu/Menu_Option_Sound
+  guid: 93e1d2a45a8f15479f852b6fd072be6c
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &6017857460982622242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Arena/Platform_Absorb_Straw
+  m_EditorClassIdentifier: 
+  Path: event:/Arena/Platform_Absorb_Straw
+  guid: 8d679760c8b391428834276c8cb6d27b
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8856037022380353443}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
 --- !u!114 &6173338141195724209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1261,6 +2034,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2250
+--- !u!114 &6372941105257281580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Player_Sink
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Player_Sink
+  guid: 4b2888e2bbdec945b1b825fd791881fc
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4159
 --- !u!114 &6610716282600409615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1482,6 +2278,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &8600411164579622022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Arena/Light_Platform_Sink
+  m_EditorClassIdentifier: 
+  Path: event:/Arena/Light_Platform_Sink
+  guid: ea83847de0f79045b37d07ec7340fbd8
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1000
 --- !u!114 &8723587017114594081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1504,3 +2323,46 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 936
+--- !u!114 &8856037022380353443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Platform_Absorb_Straw/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &9202007672866004583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BGM/Arena_Music
+  m_EditorClassIdentifier: 
+  Path: event:/BGM/Arena_Music
+  guid: 0ed4bfadf87efd45a7132212548780a1
+  Banks:
+  - {fileID: 309073573101954656}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0

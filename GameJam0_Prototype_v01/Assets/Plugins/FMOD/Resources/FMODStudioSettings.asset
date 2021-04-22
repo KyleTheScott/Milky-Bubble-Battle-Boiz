@@ -267,8 +267,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Bubble_Boiz_FMOD_2021/Bubble.fspro
-  sourceBankPath: Bubble_Boiz_FMOD_2021/Build
+  sourceProjectPath: ../../../GitHub/Milky-Bubble-Battle-Boiz/GameJam0_Prototype_v01/Bubble_Boiz_FMOD_2021/Bubble.fspro
+  sourceBankPath: ..\..\..\GitHub\Milky-Bubble-Battle-Boiz\GameJam0_Prototype_v01\Bubble_Boiz_FMOD_2021\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
