@@ -82,6 +82,8 @@ public class Player1 : MonoBehaviour
     private float inputV;
 
     //Everything Sound Related
+    private FMODSoundManager soundManager;
+
     /*[Header("Player Sound")] Old Sound variables
     [SerializeField]
     private AudioSource playerAudio;
@@ -114,6 +116,7 @@ public class Player1 : MonoBehaviour
 
         //UpdateAmmoHUD();
         //resetPosition = transform.position;
+        soundManager = FindObjectOfType<FMODSoundManager>();
     }
 
     public void InitializePlayer(PlayerConfiguration pc, PlayerHUD playerHUD)
@@ -400,6 +403,8 @@ public class Player1 : MonoBehaviour
                 {
                     anim.SetBool("isAbsorbing", true);
 
+                    soundManager.PlayPlatformAbsorb();
+
                     Debug.Log("Platform targeted");
 
                     //var renderer = targetPlatform.gameObject.GetComponent<Renderer>();
@@ -419,7 +424,8 @@ public class Player1 : MonoBehaviour
 
         if (!absorbInput)
         {
-            anim.SetBool("isAbsorbing", false);            
+            anim.SetBool("isAbsorbing", false);
+            soundManager.StopPlatformAbsorb();
         }
 
         if (!absorbInput && isAbsorbing)
@@ -476,6 +482,7 @@ public class Player1 : MonoBehaviour
         anim.SetBool("isShooting", true);
         ammoCount--;
         yield return new WaitForSeconds(.9f);
+        soundManager.PlayPlayerShoot();
         anim.SetBool("isShooting", false);
 
 
@@ -653,19 +660,17 @@ public class Player1 : MonoBehaviour
     }
 
     //old sound functions.  update with fmod
-    /*
+    
     public void PlayHitSound()
     {
-        playerAudio.clip = bulletHit;
-        playerAudio.Play();
+
     }
 
     public void PlayAbsorbSound()
     {
-        playerAudio.clip = absorbSound;
-        playerAudio.Play();
+        soundManager.PlayPlayerAbsorbedAmmo();
     }
-    */
+
 
 }
 

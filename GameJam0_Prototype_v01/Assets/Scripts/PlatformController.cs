@@ -31,6 +31,15 @@ public class PlatformController : MonoBehaviour
     float MaxModifier = 11;
     GameObject playerObject;
 
+    FMODSoundManager soundManager;
+
+
+
+    void Start()
+    {
+        soundManager = FindObjectOfType<FMODSoundManager>();
+    }
+
     void OnCollisionEnter (Collision collision)
     {
         if(collision.gameObject.tag == "Player" && state.Equals(PlatformState.FLOATING) && canSink)
@@ -52,6 +61,10 @@ public class PlatformController : MonoBehaviour
         state = PlatformState.SINKING;
         // Highlight the platform
         GetComponent<Renderer>().material.SetFloat("_Outline", outlineValue);
+
+        //play the sink warning sound
+        soundManager.PlaySinkWarning();
+
         // Wait a second
         yield return new WaitForSeconds(0.5f);
 
@@ -60,6 +73,16 @@ public class PlatformController : MonoBehaviour
         foreach (var floater in Floaters)
         {
             floater.sinkDown();
+        }
+
+        //play the sinking noise based on if the platform is light or heavy (light platforms can be absorbed)
+        if(canAbsorb)
+        {
+            soundManager.PlaySinkLight();
+        }
+        else
+        {
+            soundManager.PlaySinkHeavy();
         }
 
         // Afterwards destroy the object;
@@ -82,7 +105,19 @@ public class PlatformController : MonoBehaviour
         // Wait for a just abit for the platform to be fully absorbed
         yield return new WaitForSeconds(absorbTime);
 
-        Player1 p = player.GetComponent<Player1>();
+        //need to play sound out of player object because the platform will destroy before sound completes
+        if(player.GetComponent<Player1>())
+        {
+            Player1 p = player.GetComponent<Player1>();
+            p.PlayAbsorbSound();
+        }
+        else
+        {
+            Player2 p = player.GetComponent<Player2>();
+            p.PlayAbsorbSound();
+        }
+        
+
         state = PlatformState.ABSORBED;
         // Disable the floaters and rigid-body along with turning the collide into a trigger
         foreach (var floater in GetComponentsInChildren<FloatingController>())

@@ -24,6 +24,9 @@ public class PlayerConfigurationManager : MonoBehaviour
 
     public static PlayerConfigurationManager Instance { get; private set; }
 
+    [SerializeField]
+    private FMODSoundManager soundManager;
+
     public void Awake()
     {
         if (Instance != null)
@@ -41,6 +44,8 @@ public class PlayerConfigurationManager : MonoBehaviour
             playerInputManager = GetComponent<PlayerInputManager>();
             SceneManager.sceneLoaded += OnSceneLoaded;
         }
+
+        soundManager = FindObjectOfType<FMODSoundManager>();
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -90,6 +95,9 @@ public class PlayerConfigurationManager : MonoBehaviour
         playerConfigurations[index].IsReady = true;
         if (playerConfigurations.Count >= MinPlayersRequired && playerConfigurations.All(p => p.IsReady == true))
         {
+            //Stop FMOD Sounds
+            soundManager.StopAllSounds();
+
             // TODO: Add in map selection
             Debug.Log("All players are now ready");
             SceneManager.LoadScene(selectedMap);

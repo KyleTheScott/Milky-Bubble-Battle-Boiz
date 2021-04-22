@@ -20,17 +20,13 @@ public class VictoryScreen : MonoBehaviour
     [SerializeField]
     private GameObject continueMessage;
 
-    [SerializeField]
-    private AudioSource audioSource;
-
-    [SerializeField]
-    private AudioClip victoryClip;
+    private FMODSoundManager soundManager;
 
     // Start is called before the first frame update
 
     void Awake()
     {
-
+        soundManager = FindObjectOfType<FMODSoundManager>();
     }
 
 
@@ -63,6 +59,7 @@ public class VictoryScreen : MonoBehaviour
         {
             if (canContinue)
             {
+                soundManager.StopAllSounds();
                 SceneManager.LoadScene(0);
             }
         }
@@ -71,6 +68,7 @@ public class VictoryScreen : MonoBehaviour
         {
             if (canContinue)
             {
+                soundManager.StopAllSounds();
                 SceneManager.LoadScene(1);
             }
         }
@@ -80,9 +78,7 @@ public class VictoryScreen : MonoBehaviour
     {
 
         //play the victory music
-        audioSource.clip = victoryClip;
-        audioSource.volume = 0.7f;
-        audioSource.Play();
+
 
         yield return new WaitForSeconds(waitTime);
         canContinue = true;

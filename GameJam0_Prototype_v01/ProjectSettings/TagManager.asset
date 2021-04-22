@@ -12,6 +12,7 @@ TagManager:
   - Target
   - Cup
   - KnockOutZone
+  - SoundManager
   layers:
   - Default
   - TransparentFX

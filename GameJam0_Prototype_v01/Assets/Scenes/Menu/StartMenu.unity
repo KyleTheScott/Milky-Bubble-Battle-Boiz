@@ -3807,6 +3807,8 @@ MonoBehaviour:
   - {fileID: 47864867}
   - {fileID: 1374357017}
   - {fileID: 1270874980}
+  secondsUntilChatter: 60
+  timer: 0
 --- !u!1 &283625865
 GameObject:
   m_ObjectHideFlags: 0
@@ -28376,6 +28378,75 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &1867185778306569308
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2439000838615968226, guid: e0dfe8d6ca9496d43b4ce6e000d65bf9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439000838615968226, guid: e0dfe8d6ca9496d43b4ce6e000d65bf9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.37551993
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439000838615968226, guid: e0dfe8d6ca9496d43b4ce6e000d65bf9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.2260156
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439000838615968226, guid: e0dfe8d6ca9496d43b4ce6e000d65bf9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.740875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439000838615968226, guid: e0dfe8d6ca9496d43b4ce6e000d65bf9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439000838615968226, guid: e0dfe8d6ca9496d43b4ce6e000d65bf9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439000838615968226, guid: e0dfe8d6ca9496d43b4ce6e000d65bf9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439000838615968226, guid: e0dfe8d6ca9496d43b4ce6e000d65bf9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439000838615968226, guid: e0dfe8d6ca9496d43b4ce6e000d65bf9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439000838615968226, guid: e0dfe8d6ca9496d43b4ce6e000d65bf9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2439000838615968226, guid: e0dfe8d6ca9496d43b4ce6e000d65bf9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5366827276122756635, guid: e0dfe8d6ca9496d43b4ce6e000d65bf9,
+        type: 3}
+      propertyPath: m_Name
+      value: FMOD Sound Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e0dfe8d6ca9496d43b4ce6e000d65bf9, type: 3}
 --- !u!1 &2527817455824587729
 GameObject:
   m_ObjectHideFlags: 0

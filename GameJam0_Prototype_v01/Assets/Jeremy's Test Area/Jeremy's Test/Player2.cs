@@ -112,6 +112,10 @@ public class Player2 : MonoBehaviour
     [SerializeField]
     private bool absorbingEnabled = false;
 
+    //fmod sounds
+    //Everything Sound Related
+    private FMODSoundManager soundManager;
+
     void Awake()
     {
         InvokeRepeating(nameof(LandingCheck), landingCheckDelay, 0.1f);
@@ -124,6 +128,8 @@ public class Player2 : MonoBehaviour
         ready2Atttack = true;
         isAbsorbing = false;
         UpdateAmmoHUD();
+
+        soundManager = FindObjectOfType<FMODSoundManager>();
         //resetPosition = transform.position;
 
         /*   controls = new PlayerControls();
@@ -399,6 +405,7 @@ public class Player2 : MonoBehaviour
 
                         anim.SetBool("isAbsorbing", true);
                         Debug.Log("Platform targeted");
+                        soundManager.PlayPlatformAbsorb();
                         // this is the platform target and now it will be brought towards the player
                         isAbsorbing = true;
                         // TODO: Figure out a method to bring the sphere to the player
@@ -417,8 +424,10 @@ public class Player2 : MonoBehaviour
 
             if (!absorbInput)
             {
+                soundManager.StopPlatformAbsorb();
                 anim.SetBool("isAbsorbing", false);
                 StrawAnim.SetBool("isAbsorbing", false);
+                
             }
 
             if (!absorbInput && isAbsorbing)
@@ -663,6 +672,16 @@ public class Player2 : MonoBehaviour
     public void setAbsorbingEnabled(bool isEnabled)
     {
         absorbingEnabled = isEnabled;
+    }
+
+    public void PlayHitSound()
+    {
+
+    }
+
+    public void PlayAbsorbSound()
+    {
+        soundManager.PlayPlayerAbsorbedAmmo();
     }
 }
 

@@ -10,7 +10,6 @@ public class PlatformParticles : MonoBehaviour
     private PlatformController platform;
     public Color col;
 
-
     // Start is called before the first frame update
     void Start()
     {

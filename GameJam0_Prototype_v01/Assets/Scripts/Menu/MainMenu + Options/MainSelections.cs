@@ -16,6 +16,14 @@ public class MainSelections : MonoBehaviour
     public GameObject[] playMenuObjects;
     public Image[] underlines;
 
+    //barista chatter
+    private bool enteredMainMenu;
+    public float secondsUntilChatter;
+    [SerializeField]
+    private float timer;
+    private FMODSoundManager soundManager;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,15 +36,24 @@ public class MainSelections : MonoBehaviour
         }
 
         menuController = menuController.GetComponent<MenuController>(); // making sure the menu controller knows who it is. this is how you fix null reference exception
+
+        //barista chatter
+        soundManager = FindObjectOfType<FMODSoundManager>();
+        enteredMainMenu = true;
+        timer = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         ChangeOptions();
+
+        BaristaChatter();
 
         if (Input.GetButtonDown("Submit"))
         {
+            enteredMainMenu = false;
             ChangeMenus();
         }
         if (Input.GetButtonDown("Cancel"))
@@ -132,7 +149,24 @@ public class MainSelections : MonoBehaviour
         keyDown = false;
     }
 
+    private void BaristaChatter()
+    {
+        //reset the timer if we had left the screen
+        if (enteredMainMenu == false)
+        {
+            enteredMainMenu = true;
+            timer = 0;
+        }
 
+        timer = timer + Time.deltaTime;
+        if(timer >= secondsUntilChatter)
+        {
+            soundManager.PlayBaristaChatter();
+            Debug.Log("barista says wumbo");
+            timer = 0;
+        }
+        
+    }
 
 
 
