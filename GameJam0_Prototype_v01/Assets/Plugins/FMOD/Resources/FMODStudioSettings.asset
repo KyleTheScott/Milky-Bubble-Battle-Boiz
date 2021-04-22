@@ -268,7 +268,7 @@ MonoBehaviour:
   HasSourceProject: 1
   HasPlatforms: 1
   sourceProjectPath: Bubble_Boiz_FMOD_2021/Bubble.fspro
-  sourceBankPath: Bubble_Boiz_FMOD_2021/Build
+  sourceBankPath: Bubble_Boiz_FMOD_2021\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0

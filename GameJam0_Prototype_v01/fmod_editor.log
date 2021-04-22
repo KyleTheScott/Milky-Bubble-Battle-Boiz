@@ -8,7 +8,7 @@
 [LOG] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000246B307CE38 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000267C41D0D38 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -16,9 +16,374 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Affinity: 0x8000000000000003, Priority: 0xFFFF7FFC, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] SystemI::createSound                     : setdata soundi = 0000026A76465328 : node = 0000026A75B48F80
+[LOG] SystemI::createSound                     : add node to async list : head = 00000269F18E9CA8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000026A76465328
+[LOG] SystemI::createSoundInternal             :     Create name='Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     filename = Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1079136
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 72896
+[LOG] SystemI::createSound                     :     setdata soundi = 0000026A764608E8 : node = 0000026A766701C0
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000269F18E9CA8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000026A75B49090
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Platform_Absorb_Straw', format=5, channels=2, frequency=48000, lengthbytes=24000, lengthpcm=112446, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.366110.
+[LOG] Thread::initThread                       :     Init FMOD file thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFC, Stack Size: 49152, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000026A76465328
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000026A764608E8
+[LOG] SystemI::createSoundInternal             :     Create name='Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1079136
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 72896
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000026A766702D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Platform_Absorb_Straw', format=5, channels=2, frequency=48000, lengthbytes=24000, lengthpcm=112446, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.366110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000026A764608E8
+[LOG] SystemI::createSound                     : filename = Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000026A76464248 : node = 00000269594035A0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000269F18E9CA8.  list count = 0
+[LOG] SystemI::createSound                     : filename = Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000026A76464248
+[LOG] SystemI::createSoundInternal             :     Create name='Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1079136
+[LOG] SystemI::createSound                     :     setdata soundi = 0000026A764654D8 : node = 00000269C788BD20
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 72896
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000269F18E9CA8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000269594036B0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 250
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Platform_Absorb_Straw', format=5, channels=2, frequency=48000, lengthbytes=24000, lengthpcm=112446, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.366110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000026A76464248
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000026A764654D8
+[LOG] SystemI::createSoundInternal             :     Create name='Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1079136
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 72896
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000269C788BE30
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 250
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Platform_Absorb_Straw', format=5, channels=2, frequency=48000, lengthbytes=24000, lengthpcm=112446, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.366110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000026A764654D8
+[LOG] SoundI::release                          : Platform_Absorb_Straw (0000026A764608E8)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (00000267C4A52198)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (0000026A76461818)
+[LOG] SoundI::release                          : Platform_Absorb_Straw (0000026A76465328)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (00000267C4A54218)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (0000026A76466408)
+[LOG] SoundI::release                          : Platform_Absorb_Straw (0000026A764654D8)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (00000267C4A536B8)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (0000026A76465688)
+[LOG] SoundI::release                          : Platform_Absorb_Straw (0000026A76464248)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (00000267C4A52CF8)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (0000026A76466258)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000026A76465328 : node = 0000026A75B48F80
+[LOG] SystemI::createSound                     : add node to async list : head = 00000269F18E9CA8.  list count = 0
+[LOG] SystemI::createSound                     : filename = Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000026A76465328
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 0000026A764659E8 : node = 00000269C788BD20
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000269F18E9CA8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1079136
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 72896
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000026A75B49090
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Platform_Absorb_Straw', format=5, channels=2, frequency=48000, lengthbytes=24000, lengthpcm=112446, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.366110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000026A76465328
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000026A764659E8
+[LOG] SystemI::createSoundInternal             :     Create name='Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1079136
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 72896
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000269C788BE30
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Platform_Absorb_Straw', format=5, channels=2, frequency=48000, lengthbytes=24000, lengthpcm=112446, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.366110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000026A764659E8
+[LOG] SystemI::createSound                     : filename = Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000026A76461818 : node = 00000269F25C3C30
+[LOG] SystemI::createSound                     : add node to async list : head = 00000269F18E9CA8.  list count = 0
+[LOG] SystemI::createSound                     : filename = Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000026A76461818
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1079136
+[LOG] SystemI::createSound                     :     setdata soundi = 0000026A76461B78 : node = 0000026A766701C0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 72896
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000269F18E9CA8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000269F25C3D40
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 250
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Platform_Absorb_Straw', format=5, channels=2, frequency=48000, lengthbytes=24000, lengthpcm=112446, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.366110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000026A76461818
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000026A76461B78
+[LOG] SystemI::createSoundInternal             :     Create name='Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1079136
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 72896
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000026A766702D0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 250
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Platform_Absorb_Straw', format=5, channels=2, frequency=48000, lengthbytes=24000, lengthpcm=112446, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.366110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000026A76461B78
+[LOG] SoundI::release                          : Platform_Absorb_Straw (0000026A764659E8)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (00000267C4A546F8)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (0000026A76464FC8)
+[LOG] SoundI::release                          : Platform_Absorb_Straw (0000026A76465328)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (00000267C4A54218)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (0000026A76461158)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000026A76464C68 : node = 0000026A75B48F80
+[LOG] SystemI::createSound                     : add node to async list : head = 00000269F18E9CA8.  list count = 0
+[LOG] SystemI::createSound                     : filename = Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000026A76464C68
+[LOG] SystemI::createSoundInternal             :     Create name='Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     setdata soundi = 0000026A76466258 : node = 00000269594035A0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1079136
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000269F18E9CA8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 72896
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000026A75B49090
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 250
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Platform_Absorb_Straw', format=5, channels=2, frequency=48000, lengthbytes=24000, lengthpcm=112446, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.366110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000026A76464C68
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000026A76466258
+[LOG] SystemI::createSoundInternal             :     Create name='Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1079136
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 72896
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000269594036B0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 250
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Platform_Absorb_Straw', format=5, channels=2, frequency=48000, lengthbytes=24000, lengthpcm=112446, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.366110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000026A76466258
+[LOG] SystemI::createSound                     : filename = Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000026A76464E18 : node = 00000267C4C124E0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000269F18E9CA8.  list count = 0
+[LOG] SystemI::createSound                     : filename = Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000026A76464E18
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 0000026A764603D8 : node = 00000267C4C13160
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000269F18E9CA8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1079136
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 72896
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000267C4C125F0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Platform_Absorb_Straw', format=5, channels=2, frequency=48000, lengthbytes=24000, lengthpcm=112446, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.366110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000026A76464E18
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000026A764603D8
+[LOG] SystemI::createSoundInternal             :     Create name='Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1079136
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 72896
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000267C4C13270
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Platform_Absorb_Straw', format=5, channels=2, frequency=48000, lengthbytes=24000, lengthpcm=112446, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.366110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000026A764603D8
+[LOG] SoundI::release                          : Platform_Absorb_Straw (0000026A76466258)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (00000267C4A505F8)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (0000026A76461668)
+[LOG] SoundI::release                          : Platform_Absorb_Straw (0000026A76464C68)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (00000267C4A53B98)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (0000026A764659E8)
+[LOG] SoundI::release                          : Platform_Absorb_Straw (0000026A76461B78)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (00000267C4A531D8)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (0000026A76465838)
+[LOG] SoundI::release                          : Platform_Absorb_Straw (0000026A76461818)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (00000267C4A55258)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (0000026A76463168)
+[LOG] SystemI::createSound                     : filename = Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000026A76466258 : node = 00000267C4C13F20
+[LOG] SystemI::createSound                     : add node to async list : head = 00000269F18E9CA8.  list count = 0
+[LOG] SystemI::createSound                     : filename = Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000026A76466258
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     setdata soundi = 0000026A76464C68 : node = 00000267C4C138E0
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000269F18E9CA8.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1079136
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 72896
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000267C4C14030
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 250
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Platform_Absorb_Straw', format=5, channels=2, frequency=48000, lengthbytes=24000, lengthpcm=112446, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.366110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000026A76466258
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000026A76464C68
+[LOG] SystemI::createSoundInternal             :     Create name='Bubble_Boiz_FMOD_2021\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1079136
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 72896
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000267C4C139F0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 250
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Platform_Absorb_Straw', format=5, channels=2, frequency=48000, lengthbytes=24000, lengthpcm=112446, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.366110.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000026A76464C68
+[LOG] SoundI::release                          : Platform_Absorb_Straw (0000026A764603D8)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (00000267C4A560F8)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (0000026A76462E08)
+[LOG] SoundI::release                          : Platform_Absorb_Straw (0000026A76464E18)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (00000267C4A51978)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (0000026A76463EE8)
+[LOG] SoundI::release                          : Platform_Absorb_Straw (0000026A76464C68)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (00000267C4A51B18)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (0000026A76464098)
+[LOG] SoundI::release                          : Platform_Absorb_Straw (0000026A76466258)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (00000267C4A50C78)
+[LOG] SoundI::release                          :     Platform_Absorb_Straw (0000026A76462FB8)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SoundI::release                          :  (00000269F20817C8)
+[LOG] SoundI::release                          :     Heavy Sink  _5 - Trimmed (00000269CABD72A8)
+[LOG] SoundI::release                          :  (00000269F2083318)
+[LOG] SoundI::release                          :     Heavy Sink 5  - Trimmed (00000269EE297648)
+[LOG] SoundI::release                          :  (00000269F2081AA8)
+[LOG] SoundI::release                          :     Platform_Sink_Indicator_t5 (00000269EE6CBA98)
+[LOG] SoundI::release                          :  (00000269F2084008)
+[LOG] SoundI::release                          :     Platform_sink_Indicator_t3 (00000269EDEF2C98)
+[LOG] SoundI::release                          :  (00000269F2081938)
+[LOG] SoundI::release                          :     Platform_Sink_Indicator_t2 (00000269EE6C3078)
+[LOG] SoundI::release                          :  (00000269F20803A8)
+[LOG] SoundI::release                          :     Platform_Sink_Indicator_t1 (00000269EDEF70D8)
+[LOG] SoundI::release                          :  (00000269F207FDE8)
+[LOG] SoundI::release                          :     Light Sink 1 (00000269F03EC438)
+[LOG] SoundI::release                          :  (00000269F20831A8)
+[LOG] SoundI::release                          :     Light Sink 3 (00000269CABD7788)
+[LOG] SoundI::release                          :  (00000269F207EF88)
+[LOG] SoundI::release                          :     Light Sink 4 (00000269F03E77D8)
+[LOG] SoundI::release                          :  (00000269F2081D88)
+[LOG] SoundI::release                          :     Heavy Sink  _3 (00000267C4A51638)
+[LOG] SoundI::release                          :  (00000269F20821D8)
+[LOG] SoundI::release                          :     LIGHT sink (00000269EE2991E8)
+[LOG] SoundI::release                          :  (00000269F20824B8)
+[LOG] SoundI::release                          :     Light Platform Sink (00000267C4A51498)
+[LOG] SoundI::release                          :  (00000269F2080DB8)
+[LOG] SoundI::release                          :     bubbles5 (00000269CA0299D8)
+[LOG] SoundI::release                          :  (00000269F2085878)
+[LOG] SoundI::release                          :     bubbles1 (00000269CA024218)
+[LOG] SoundI::release                          :  (00000269F20835F8)
+[LOG] SoundI::release                          :     bubbles4 (00000267C4A565D8)
+[LOG] SoundI::release                          :  (00000269F2082068)
+[LOG] SoundI::release                          :     bubbles2 (00000269EE2A2DE8)
+[LOG] SoundI::release                          :  (00000269F207AD68)
+[LOG] SoundI::release                          :     extra splash bubbles - Trimmed (2) (00000269F03D9FB8)
+[LOG] SoundI::release                          :  (00000269F2082EC8)
+[LOG] SoundI::release                          :     Heavy Sink 5  (00000269EF614D98)
+[LOG] SoundI::release                          :  (00000269F2083488)
+[LOG] SoundI::release                          :     bubbles6 (00000269CAD067F8)
+[LOG] SoundI::release                          :  (00000269F2082BE8)
+[LOG] SoundI::release                          :     extra splash bubbles (00000269EF6136D8)
+[LOG] SoundI::release                          :  (00000269F2082908)
+[LOG] SoundI::release                          :     bubbles7 (00000269F03E0138)
+[LOG] SoundI::release                          :  (00000269F207E298)
+[LOG] SoundI::release                          :     DEEP Bubble (00000269EFC99D78)
+[LOG] SoundI::release                          :  (00000269F2081658)
+[LOG] SoundI::release                          :     extra splash bubbles - Trimmed (00000269CABD7108)
+[LOG] SoundI::release                          :  (00000269F2085598)
+[LOG] SoundI::release                          :     Platform_Sink_Indicator_t4 (00000269EDEF8AD8)
+[LOG] SoundI::release                          :  (00000269F20807F8)
+[LOG] SoundI::release                          :     Heavy Sink  _1 (00000267C4A524D8)
+[LOG] SoundI::release                          :  (00000269F2081098)
+[LOG] SoundI::release                          :     Heavy Sink  _2 (00000269EE6C4598)
+[LOG] SoundI::release                          :  (00000269F207C2F8)
+[LOG] SoundI::release                          :     Light Sink 2 (00000269EFCA32F8)
+[LOG] SoundI::release                          :  (00000269F2081378)
+[LOG] SoundI::release                          :     Light Sink 5 (00000269EDEF7DD8)
+[LOG] SoundI::release                          :  (00000269F207E578)
+[LOG] SoundI::release                          :     Heavy Sink  _4 (00000269EFCA3CB8)
+[LOG] SoundI::release                          :  (00000269F2082348)
+[LOG] SoundI::release                          :     Bubbles combined (00000269EF610FD8)
+[LOG] SoundI::release                          :  (00000269F2083038)
+[LOG] SoundI::release                          :     bubbles3 (00000269F03DBB58)
+[LOG] SoundI::release                          :  (00000269F2085708)
+[LOG] SoundI::release                          :     WeaponAssignment 2 Punch Layer (00000269CAD05AF8)
+[LOG] SoundI::release                          :  (00000269F207F998)
+[LOG] SoundI::release                          :     straw shoot (00000269F03EA3B8)
+[LOG] SoundI::release                          :  (00000269F2084738)
+[LOG] SoundI::release                          :     Tom-909-Mid (00000269CABD8628)
+[LOG] SoundI::release                          :  (00000269F207A918)
+[LOG] SoundI::release                          :     straw shoot_1no low (00000269F03EB738)
+[LOG] SoundI::release                          :  (00000269F207E9C8)
+[LOG] SoundI::release                          :     WeaponAssignment 2 Top Layer (00000269EFCA0238)
+[LOG] SoundI::release                          :  (00000269F20838D8)
+[LOG] SoundI::release                          :     Platform_Absorb_PLOP (00000267C4A55738)
+[LOG] SoundI::release                          :  (00000269F207C5D8)
+[LOG] SoundI::release                          :     Platform_Absorb_POP (00000269F03D3FD8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
